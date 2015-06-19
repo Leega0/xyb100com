@@ -7,7 +7,9 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font: normal 12px/1.5 '微软雅黑','宋体'; /* 1 */
+  color: #474747;
+  background-color: #fff;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -17,6 +19,8 @@ html {
  */
 
 body {
+  font: normal 12px/1.2 '微软雅黑','宋体';
+  position: relative;
   margin: 0;
 }
 
@@ -424,4 +428,118 @@ table {
 td,
 th {
   padding: 0;
+}
+ul, ol {
+  list-style: none;
+  margin: 0;
+}
+
+i, b, em {
+  font-style: normal;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+/* 清浮动 */
+.clearfix,
+.module-title,
+.container {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after,
+.module-title:before,
+.module-title:after,
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+  height: 0;
+}
+.clearfix:after,
+.module-title:after,
+.container:after {
+  clear: both;
+}
+.hide {
+  display: none !important;
+}
+/* 浮动 */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/* 字体样式 */
+.bold {
+  font-weight: bold;
+}
+.valign-mid {
+  vertical-align: middle;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.text-underline {
+  text-decoration: underline;
+}
+/* 字体颜色设置 */
+.ui-font-link{
+  color: #2c97f4 !important;
+}
+.ui-font-gray{
+  color: #b9b9b9 !important;
+}
+.ui-font-white{
+  color: #fff !important;
+}
+.ui-font-green{
+  color: #74ca98 !important;
+}
+.ui-font-blue{
+  color: #2c97f4 !important;
+}
+.ui-font-dark{
+  color: #777 !important;
+}
+/* 字体样式-大小 */
+.ui-size14{
+  font-size: 14px;
+}
+.ui-size16{
+  font-size: 16px;
+}
+.ui-size24{
+  font-size: 24px;
+}
+.ui-size34{
+  font-size: 34px;
 }

@@ -5,16 +5,10 @@ require.config({
         "jquery": "lib/jquery"
     },
     waitSeconds: 15,
-    map: {
-        '*': {
-            'css': 'lib/css'
-        }
-    },
-    shim : {
-        'util': ['css!../css/index.css']
-    }
 });
 
-require(["util"], function(util) {
-    // todo
+require(['app/a'], function (a){
+ 
+    console.log(a.add(2,3));
+ 
 });

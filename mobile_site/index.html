@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="style/earnings.css">	
+	<title>charts</title>
+</head>
+<body class="ui-gray-bg">
+<!-- 昨日收益 -->
+<header class="ui-blue-bg ysd-earn">
+	<a href="">
+	<p class="ysd-earn-title clearfix">
+		<span class="fl"><i class="icons-clock"></i>昨日收益（元）</span>
+		<span class="icons-wenhao fr"></span>
+	</p>
+	<h1>18.03</h1>
+	</a>
+</header>
+<section>
+	<!-- 金额列表 -->
+	<dl class="earn-list">
+		<dd>
+			<div class=""><a href="">
+				<p class="earn-all clearfix">
+				<span class="fl">
+					总金额（元）
+				</span>
+				<span class="icons-wensmall fr"></span>
+				</p>
+				<h5>6514.50</h5>
+			</a></div>
+			<div class=""><a href="">
+				<p class="earn-all clearfix">
+				<span class="fl">
+					投资收益（元）
+				</span>
+				<span class="icons-wensmall fr"></span>
+				</p>
+				<h5>24501.50</h5>
+			</a></div>
+		</dd>
+		<dd>
+			<div class=""><a href="">
+				<p class="earn-all clearfix">
+				<span class="fl">
+					可用余额（元）
+				</span>
+				<span class="icons-wensmall fr"></span>
+				</p>
+				<h6>15834.50</h6>
+			</a></div>
+			<div class=""><a href="">
+				<p class="earn-all clearfix">
+				<span class="fl">
+					冻结资金（元）
+				</span>
+				<span class="icons-wensmall fr"></span>
+				</p>
+				<h6>5382.10</h6>
+			</a></div>
+		</dd>
+	</dl>
+	<div id="main" style="height:15.5em;"></div>
+</section>
+<!-- 投资取现 -->
+<footer class="earn-footer">
+	<div class="earn-btns">
+	<a href="">投资</a><a href="">取现</a>
+	</div>
+</footer>
+	<!-- chartjs -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			//获取数据
+			$.getJSON('js/chartdata.json',null, function(data) {
+			$('#main').highcharts({
+				chart: {
+					type: 'line'
+				},
+				title: {
+					text: ' '
+				},
+				subtitle: {
+					text: '年化收益',
+					align: 'left',
+					x: 0,
+					style:{
+						color:'#bbbbbb'
+					}
+				},
+				xAxis: {
+					categories: data['categories'],
+					lineColor: '#ebebeb',
+					tickmarkPlacement:'on',
+					tickColor:'#ebebeb'
+
+				},
+				yAxis: {
+					title: {
+						text: ''
+					},
+					tickInterval:5,
+					tickPositions: [2, 4, 6, 8, 10],
+					labels: {
+						formatter: function() {
+							return this.value +''
+						}
+					}
+				},
+				plotOptions:{
+					series:{
+						color:'#ababab',
+						marker:{
+							enabled:true,
+							radius:4,
+							fillColor:'#ffffff',
+							lineWidth:2,
+							lineColor:'#ff7234'
+						}
+					}
+				},
+				tooltip: {
+					crosshairs: true,
+					shared: false,
+					shadow:false,
+					style:{
+						padding:5,
+					},
+					formatter: function() {  
+                    return '<span style="color:#fff">'+ this.y +'</span>';  
+            		},  
+					backgroundColor:"#3ea3fe",
+					borderWidth : 0,
+					borderRadius : 6
+				},
+				navigation: {
+					buttonOptions: {
+						enabled: false
+					}
+				},
+				credits:{
+				     enabled:false // 禁用版权信息
+				 },
+				 legend:{
+				 	enabled:false 
+				 },
+				 series: [{
+				 	name: data['series']['name'],
+
+				 	data:data['series']['data'],
+
+				 }]
+});
+		});
+			});			
+	</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import "reset";
+.ysd-earn{
+	height:13.6rem;
+	padding:2rem 1rem;
+}
+.ysd-earn-title{
+	color:#fff;
+	font-size: 1.1rem;
+	padding: 0.8rem 0;
+}
+.icons-clock, .icons-wenhao, .icons-wensmall,{
+  background-image: url('../images/icons-sf960c7a5b0.png');
+  background-size: 1.4rem 4.25rem;
+  background-repeat: no-repeat; 
+  display: inline-block;
+}
+.icons-clock {
+  background-position: 0 0; 
+  width: 1.1rem;
+  height: 1.3rem;
+  position: relative;
+  margin-right:0.3rem;
+  top:0.3rem;
+}
+.icons-wenhao {
+  background-position: 0 -1.5rem; 
+  width: 1.5rem;
+  height: 1.5rem;
+  position:relative;
+  top:0.2rem;
+}
+.ysd-earn h1{
+	font-size: 6.1rem;
+	color:#fff;
+	padding-top: 0.8rem;
+}
+.earn-list{
+	dd{
+		display:flex;
+		&:first-child>div{
+			background-color: #fff;
+			padding: 1.5rem 1rem;
+		}
+		div:first-child:after{
+			content:"";
+			position: absolute;
+			right: 0;
+			top:50%;
+			margin-top:-1.85rem;
+			height: 3.7rem;
+			border-right:1px solid #d9d9d9;
+			
+		}
+		border-bottom:1px solid #e3e4e6;
+	}
+	div{
+	width:50%;
+	padding:1rem;
+	font-size: 0.75rem;
+	color:#bbb;
+	position: relative;
+	}
+	h5,h6{
+		color: #848484;
+		font-size: 1.75rem;
+		line-height: 1.5;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	h6{
+		font-size: 1.5rem;
+	}
+}
+.icons-wensmall {
+  background-position: 0 -3.1rem; 
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.earn-footer{
+	position: fixed;
+	bottom:0;
+	width:100%;
+}
+.earn-btns{
+	display:flex;
+	background-color: $base_blue;
+	padding:1rem 0;
+	a{
+		display: block;
+		width: 50%;
+		text-align: center;
+		font-size: 1.6rem;
+		color: #fff;
+		height:3.9rem;
+		line-height: 3.9rem;
+		&:first-child{
+			border-right:1px solid #65b5fe;
+		}
+	}
+}
