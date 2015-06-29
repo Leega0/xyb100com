@@ -537,9 +537,202 @@ h6 {
 .ui-size16{
   font-size: 16px;
 }
+.ui-size16{
+  font-size: 18px;
+}
 .ui-size24{
   font-size: 24px;
 }
 .ui-size34{
   font-size: 34px;
+}
+ // 边距
+.ui-mt5 {
+  margin-top: 5px !important;
+}
+.ui-mt10 {
+  margin-top: 10px !important;
+}
+.ui-mt15 {
+  margin-top: 15px !important;
+}
+.ui-mt20 {
+  margin-top: 20px !important;
+}
+.ui-mt30 {
+  margin-top: 30px !important;
+}
+.ui-mb5 {
+  margin-bottom: 5px !important;
+}
+.ui-mb10 {
+  margin-bottom: 10px !important;
+}
+.ui-mb15 {
+  margin-bottom: 15px !important;
+}
+.ui-mb20 {
+  margin-bottom: 20px !important;
+}
+.ui-mb30 {
+  margin-bottom: 30px !important;
+}
+.ui-ml5 {
+  margin-left: 5px !important;
+}
+.ui-ml10 {
+  margin-left: 10px !important;
+}
+.ui-ml15 {
+  margin-left: 15px !important;
+}
+.ui-ml20 {
+  margin-left: 20px !important;
+}
+.ui-ml30 {
+  margin-left: 30px !important;
+}
+.ui-mr5 {
+  margin-right: 5px !important;
+}
+.ui-mr10 {
+  margin-right: 10px !important;
+}
+.ui-mr15 {
+  margin-right: 15px !important;
+}
+.ui-mr20 {
+  margin-right: 20px !important;
+}
+.ui-mr30 {
+  margin-right: 30px !important;
+}
+.ui-p5 {
+  padding: 5px !important;
+}
+.ui-p10 {
+  padding: 10px !important;
+}
+.ui-p15 {
+  padding: 15px !important;
+}
+.ui-p20 {
+  padding: 20px !important;
+}
+.ui-p30 {
+  padding: 30px !important;
+}
+.ui-pt5 {
+  padding-top: 5px !important;
+}
+.ui-pt10 {
+  padding-top: 10px !important;
+}
+.ui-pt15 {
+  padding-top: 15px !important;
+}
+.ui-pt20 {
+  padding-top: 20px !important;
+}
+.ui-pt30 {
+  padding-top: 30px !important;
+}
+.ui-pb5 {
+  padding-bottom: 5px !important;
+}
+.ui-pb10 {
+  padding-bottom: 10px !important;
+}
+.ui-pb15 {
+  padding-bottom: 15px !important;
+}
+.ui-pb20 {
+  padding-bottom: 20px !important;
+}
+.ui-pb30 {
+  padding-bottom: 30px !important;
+}
+.ui-pl5 {
+  padding-left: 5px !important;
+}
+.ui-pl10 {
+  padding-left: 10px !important;
+}
+.ui-pl15 {
+  padding-left: 15px !important;
+}
+.ui-pl20 {
+  padding-left: 20px !important;
+}
+.ui-pl30 {
+  padding-left: 30px !important;
+}
+.ui-pr5 {
+  padding-right: 5px !important;
+}
+.ui-pr10 {
+  padding-right: 10px !important;
+}
+.ui-pr15 {
+  padding-right: 15px !important;
+}
+.ui-pr20 {
+  padding-right: 20px !important;
+}
+.ui-pr30 {
+  padding-right: 30px !important;
+}
+// 按钮
+.ui-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0 5px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-image: none;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  border: none;
+  outline: none;
+}
+.ui-btn-blue {
+  background-color: #3498db;
+  &:hover{
+    background-color: #62b7e7;
+  }
+  &:active{
+    background-color: #3177a7;
+  }
+}
+.ui-btn-gray{
+  background-color: #ababab;
+}
+// 进度条
+.ui-progress {
+  width: 100px;
+  height: 4px;
+  position: relative;
+  border-radius: 1px;
+  text-align: center;
+  color: #fff;
+  background-color: #eee;
+}
+.ui-progress-content {
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-radius: 1px;
+  background-color: #74ca98;
+}
+.ui-progress-value {
+  width: 0;
+  height: 0;
+  display: none;
 }

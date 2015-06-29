@@ -4,11 +4,14 @@ require.config({
     paths: {
         "jquery": "lib/jquery"
     },
-    waitSeconds: 15,
+    shim:{
+    	'excanvas':['lib/jquery']
+    }
 });
 
-require(['app/a'], function (a){
- 
-    console.log(a.add(2,3));
+require(['app/a','jquery'], function (add,$){
+ 	var c=add(1,4)
+   console.log(c);
+ $("body").append('Some text')
  
 });
