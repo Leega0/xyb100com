@@ -1,0 +1,67 @@
+.invest-table td {
+  border-top: 1px solid #f6f6f6;
+  padding: 23px 0;
+  text-align: center;
+}
+
+.invest-table td .ui-btn {
+  padding: 14px 30px;
+}
+
+.invest-table td .invest-xt-title {
+  color: #b9b9b9;
+  margin-bottom: 8px;
+}
+
+.invest-table td .credit-level {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #74ca98;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.invest-table td .credit-level.level_b {
+  background-color: #f1c40f;
+}
+
+.invest-table td .credit-level.level_c {
+  background-color: #fc8478;
+}
+
+.invest-table .invest-title {
+  padding-left: 30px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.invest-table .invest-title p {
+  margin-top: 5px;
+}
+
+.invest-table .invest-title .green-bbox {
+  font-size: 12px;
+  padding: 1px 10px;
+  margin-right: 5px;
+}
+
+.invest-table .invest-rate {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.invest-table .invest-progress {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.invest-table .invest-progress p {
+  color: #b9b9b9;
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=invest.css.map */

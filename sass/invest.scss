@@ -1,0 +1,65 @@
+.invest-table{
+	td{
+		border-top: 1px solid #f6f6f6;
+		padding:23px 0;
+		text-align: center;
+		.ui-btn{
+			padding:14px 30px;
+		}
+		.invest-xt-title{
+			color: #b9b9b9;
+			margin-bottom: 8px;
+		}
+		.credit-level{
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			font-size: 16px;
+			background-color: #74ca98;
+			border-radius:50%;
+			text-align: center;
+			margin:0 auto;
+			&.level_b{
+				background-color: #f1c40f;
+			}
+			&.level_c{
+				background-color: #fc8478;
+			}
+		}
+	}
+	.invest-title{
+		padding-left: 30px;
+		font-size: 16px;
+		text-align: left;
+		p{
+			margin-top: 5px;
+		}
+		.green-bbox{
+			font-size: 12px;
+			padding:1px 10px;
+			margin-right: 5px;
+		}
+	}
+	.invest-btn{
+			
+		}
+	.invest-rate{
+		text-align: left;
+		padding-left: 20px;
+	}
+	.invest-date{
+		
+	}
+	.invest-credit{
+		
+	}
+	.invest-progress{
+		text-align: left;
+		padding-left: 20px;
+		p{
+			color: #b9b9b9;
+			padding-top: 5px;
+		}
+	}
+}
