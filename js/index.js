@@ -1,22 +1,4 @@
 $(function(){
-	// 顶部菜单栏展开
-	$(".myhome-account").hover(function() {
-		$(".home-account-list").show()
-	}, function() {
-		$(".home-account-list").hide()
-	});
-	// menu 菜单栏展开
-	$(".menu-invest").hover(function() {
-		$(".menu-invest-list").show()
-	}, function() {
-		$(".menu-invest-list").hide()
-	});
-	// footer 菜单栏展开
-	$(".group-list").hover(function() {
-		$(".menber-list").slideDown();
-	}, function() {
-		$(".menber-list").slideUp();
-	});
 	// banner
   	$('.bxslider').bxSlider({
   		// mode:'fade',
@@ -75,24 +57,4 @@ var scrtime;
                 ul.find("li:last").animate({opacity:0}, 500);       
         },3000);
      }).trigger("mouseleave");
-    // 返回顶部
-    $("body").append('<ul class="ui-popbar">'+
-	'<li><a href="" class="ui-kefu icon-popbar"></a></li>'+
-	'<li><a href="" class="ui-code icon-popbar"></a></li>'+
-	'<li><a href="" class="ui-cal icon-popbar"></a></li>'+
-	'<li><a href="#" class="ui-gotop icon-popbar"></a></li>'
-+'</ul>');
-    var $popbar = $('.ui-popbar'),
-        $pobarWidth = $popbar.width(),
-        barEdge = ($(document).width()-1200) / 2 - $pobarWidth - 15;
-    $popbar.css('right', barEdge);
-
-    var $wechat = $('.ui-popbar-qrcode'),
-        $wechatImg = $wechat.next('img');
-    $wechat.bind('mouseover', function() {
-        $wechatImg.css('display', 'block');
-    });
-    $wechat.bind('mouseleave', function() {
-        $wechatImg.css('display', 'none');
-    });
 });

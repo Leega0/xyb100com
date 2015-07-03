@@ -64,4 +64,210 @@
   padding-top: 5px;
 }
 
+.invest-menu li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.invest-menu li a {
+  display: block;
+  height: 58px;
+  line-height: 58px;
+}
+
+.invest-menu li a .separator {
+  color: #eee;
+  float: right;
+}
+
+.invest-menu li.cur {
+  color: #2c97f4;
+  border-top: 2px solid #2c97f4;
+  margin-top: -1px;
+}
+
+.filter-box {
+  overflow: hidden;
+}
+
+.filter-box h5 {
+  font-weight: normal;
+  margin: 24px 0 0 30px;
+}
+
+.filter-wrap {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.filter-wrap dt {
+  padding: 18px 0 8px 20px;
+  margin-left: 5px;
+}
+
+.filter-condition {
+  overflow: hidden;
+}
+
+.filter-condition dt, .filter-condition dd {
+  float: left;
+  padding: 10px 20px;
+}
+
+.filter-condition dd .selected {
+  background-color: #2c97f4;
+  color: #fff;
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
+.invset-list-wrap {
+  margin: 25px;
+  margin-top: 20px;
+  border: 1px solid #eee;
+}
+
+.invest-table-inside th {
+  font-weight: normal;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.invest-table-inside th.invest-title {
+  font-size: 12px;
+}
+
+.invest-table-inside th.invest-avali {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.invest-table-inside th b {
+  position: absolute;
+  margin-left: 5px;
+}
+
+.invest-table-inside th b.triangle-up {
+  top: 20px;
+}
+
+.invest-table-inside th b.triangle-down {
+  bottom: 19px;
+}
+
+.invest-table-inside td {
+  border-color: #eee;
+}
+
+.invest-table-inside td .green-bbox {
+  padding: 1px 5px;
+}
+
+.invest-table-inside td .ui-btn {
+  padding: 10px 30px;
+}
+
+.invest-table-inside td .invest-end {
+  padding: 10px 37px;
+  cursor: not-allowed;
+}
+
+.invest-table-inside th, .invest-table-inside td {
+  padding: 20px 0;
+}
+
+.invest-table-inside .invest-title {
+  font-size: 14px;
+}
+
+.invest-current {
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.invest-current .invest-hq-chart {
+  width: 440px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.invest-current .invest-hq-rate {
+  width: 210px;
+  padding: 90px 20px 0 100px;
+}
+
+.invest-current .invest-hq-rate p {
+  padding-bottom: 5px;
+}
+
+.invest-current .invest-hq-rate span {
+  font-size: 34px;
+  color: #2c97f4;
+}
+
+.invest-current .invest-hq-rate span .icon-down {
+  width: 22px;
+  height: 26px;
+  background: url(../images/sprites/icon-downgreen.png) no-repeat;
+}
+
+.invest-current .detail-invest-box {
+  width: 250px;
+  margin-right: 68px;
+}
+
+.detail-invest-content .ui-input-body input {
+  width: 100%;
+  margin-top: 3px;
+}
+
+.content .detail-tabs {
+  height: 58px;
+  border: 1px solid #eee;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.content .detail-tabs-item {
+  display: block;
+  float: left;
+  height: 58px;
+  line-height: 58px;
+  padding: 0 32px;
+  font-size: 16px;
+  border-right: 1px solid #eee;
+}
+
+.content .detail-tabs-active {
+  height: 58px;
+  line-height: 48px;
+  background-color: #fff;
+  border-top: 2px solid #3498db;
+}
+
+.ask-item {
+  line-height: 2;
+  padding: 10px 30px;
+}
+
+.invest-intro-pd {
+  padding: 0 30px 60px;
+}
+
+.invest-intro-table tr:first-child td {
+  border-top: 2px solid #eee;
+}
+
+.invest-intro-table td {
+  padding: 20px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.invest-intro-table td:first-child {
+  padding-left: 30px;
+}
+
 /*# sourceMappingURL=invest.css.map */
