@@ -89,10 +89,14 @@ $(function(){
   }
 // 详情页tab切换
 $page = $(document).find('.content').find('div[data-page]');
+$page_radar = $(document).find('.contentb').find('div[data-page]');
 switch ($page.data('page')) {
   case 'detail':
   detailInit();
   break;
+}
+if($page_radar.data('page')=='radar'){
+  radarScore();
 }
 function detailInit() {
     var $detailTab = $('.detail-tabs'),
