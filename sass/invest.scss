@@ -190,16 +190,55 @@
     		}
 		}
 	}
-	.detail-invest-box{
-		width: 250px;
+}
+.detail-invest-box{
+		width: 270px;
 		margin-right:68px;
-	}
 }
 .detail-invest-content{
+	.invest-last-num{
+		line-height: 1.8;
+	}
 	.ui-input-body{
 		input{
 			width: 100%;
 			margin-top: 3px;
+		}
+	}
+	.invest-money-detail{
+		position: relative;
+		.detail-icons{
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			cursor: pointer;
+			float: left;
+		}
+		.icon-plus{
+			background: url(../images/sprites/icon-plus.png) no-repeat;
+		}
+		.icon-minus{
+			background: url(../images/sprites/icon-minus.png) no-repeat;
+		}
+		.invest-money-text{
+			width: 206px;
+			float: left;
+			p{
+				padding-bottom:10px;
+				overflow: hidden;
+				margin: 0 3px;
+			}
+		}
+		.money-last{
+			display: none;
+		}
+		.btn-recharge{
+			color: #2c97f4;
+			border:1px solid #2c97f4;
+			padding:0 3px;
+			border-radius:3px;
+			margin-left: 5px;
+			float: right;
 		}
 	}
 }
@@ -221,8 +260,9 @@
 	}
 	.detail-tabs-active{
 		height: 58px;
-	    line-height: 48px;
+	    line-height: 58px;
 	    background-color: #fff;
+	    color: #399df5;
 	    border-top: 2px solid #3498db;
 	}
 }
@@ -248,5 +288,169 @@
 		&:first-child{
 			padding-left: 30px;
 		}
+	}
+}
+// 通用弹出层样式
+.layer-title{
+	font-size: 16px;
+	border-left:3px solid #2c97f4;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding-left: 5px;
+	line-height: normal;
+}
+.layer-content{
+	width:270px;
+	margin:0 auto;
+	.charge_psw{
+		width: 80% !important;
+		margin-top: 2px !important;
+	}
+	.btn-invest-all{
+		position: absolute;
+		right: 0;
+		top:13px;
+		border-top-right-radius:3px;
+		border-bottom-right-radius:3px;
+		width: 45px;
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		text-align: center;
+		background-color:#2c97f4;
+		&:hover{
+			background-color: #62b7e7;
+		}
+	}
+	.prospect-earn{
+		padding:14px 0 14px 3px;
+	}
+	.invest-settle{
+		padding:8px 0;
+	}
+}
+.invest-money-text{
+	.use-crad-help{
+		width: 263px;
+	}
+	.gift-cards{
+		width: 263px;
+		border:1px solid #b5dcfe;
+		background-color: #f3f9ff;
+		overflow: hidden;
+		display: none;
+	}
+	.gift-card-item{
+		padding:10px 2px 10px 0;
+		overflow: hidden;
+		input{
+			position: relative;
+			top:2px;
+			margin-left: 10px;
+		}
+		&:first-child{
+			border-bottom:1px dashed #b5dcfe;
+		} 
+	}
+}
+.layer-bottom{
+	border-top:1px solid #ddd;
+	margin:0 25px;
+	.xyb-agree-ctn{
+		input{
+			position: relative;
+			top:2px;
+			margin-right: 3px;
+		}
+	}
+}
+// 定期宝详情页
+.detail-content-left{
+	float: left;
+	width: 840px;
+	.detail-content-section{
+		margin: 20px 30px 0; 
+	}
+	.detail-content-infor{
+		border-top:1px solid #eee;
+		border-bottom:1px solid #eee;
+	}
+	.detail-content-item{
+		float: left;
+		width: 226px;
+		text-align: center;
+		padding:56px 0;
+		&.detail-content-item-end{
+			text-align: left;
+			padding-left: 80px;
+		}
+	}
+	.detail-content-feature{
+		p{
+			width: 33.33%;
+			float: left;
+			padding:35px 0;
+			&.release-date{
+				text-indent: 50px;
+			}
+		}
+		.ui-font-green{
+			.icon-sec{
+				margin-left: 20px;
+			}
+			span{
+				position: relative;
+				top:-4px;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+.icon-sec{
+	display:inline-block;
+	width:14px;
+	height: 16px;
+	background: url(../images/sprites/icon-sec.png) no-repeat;
+}
+.detail-content-right{
+	float: right;
+	.detail-invest-box{
+		width: 280px;
+		margin:54px 30px 29px;
+	}
+}
+.detail-content-right{
+	.btn-invest-all{
+		position: absolute;
+		right: 0;
+		top: 8px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		width: 45px;
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		text-align: center;
+		background-color: #2c97f4;
+	}
+}
+// 投资记录列表
+.invest-record{
+	th{
+		font-weight: normal;
+		color: #b9b9b9;
+		font-size: 14px;
+		padding:20px 0;
+		border-bottom:1px solid #eee;
+	}
+	td{
+		padding: 24px 0;
+		font-size: 14px;
+		text-align: center;
+		border-bottom:1px solid #eee;
+	}
+	.record-date{
+		text-align: left;
+		padding-left: 120px;
 	}
 }

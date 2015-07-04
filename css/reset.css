@@ -522,7 +522,15 @@ h6 {
   color: #777 !important;
 }
 
+.ui-font-pink {
+  color: #fc8478 !important;
+}
+
 /* 字体样式-大小 */
+.ui-size12 {
+  font-size: 12px;
+}
+
 .ui-size14 {
   font-size: 14px;
 }
@@ -537,6 +545,10 @@ h6 {
 
 .ui-size24 {
   font-size: 24px;
+}
+
+.ui-size28 {
+  font-size: 28px;
 }
 
 .ui-size34 {
@@ -565,6 +577,10 @@ h6 {
 
 .ui-mt20 {
   margin-top: 20px !important;
+}
+
+.ui-mt24 {
+  margin-top: 24px;
 }
 
 .ui-mt30 {
@@ -609,6 +625,10 @@ h6 {
 
 .ui-ml15 {
   margin-left: 15px !important;
+}
+
+.ui-ml15d {
+  margin-left: -15px !important;
 }
 
 .ui-ml20 {
@@ -912,6 +932,12 @@ h6 {
   background: url(../images/sprites/icon-ipt-phone.png) no-repeat;
 }
 
+.icon-form-passwd {
+  background: url(../images/sprites/icon-psw.png) no-repeat;
+  width: 30px;
+  height: 20px;
+}
+
 .ui-progress {
   width: 100px;
   height: 4px;
@@ -1163,6 +1189,15 @@ h6 {
 
 .menu-list li .menu-invest-list a {
   line-height: 2;
+}
+
+.menu-list .icon-downapp {
+  width: 28px;
+  height: 28px;
+  background-position: -46px -39px;
+  position: relative;
+  top: 9px;
+  left: -5px;
 }
 
 .statis-sum {

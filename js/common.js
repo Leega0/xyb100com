@@ -9,13 +9,13 @@ $(function(){
 	$(".menu-invest").hover(function() {
 		$(".menu-invest-list").show()
 	}, function() {
-		$(".menu-invest-list").hide()
+		$(".menu-invest-list").stop().hide()
 	});
 	// footer 菜单栏展开
 	$(".group-list").hover(function() {
-		$(".menber-list").slideDown();
+		$(".menber-list").stop().slideDown();
 	}, function() {
-		$(".menber-list").slideUp();
+		$(".menber-list").stop().slideUp();
 	});
     // 返回顶部
     $("body").append('<ul class="ui-popbar">'+
@@ -119,4 +119,41 @@ function detailInit() {
         })
     }
 }
+// 礼金展开
+  $(".detail-icons").bind('click',function(){
+    $(this).toggleClass('icon-minus');
+    $(this).next().children('.money-last').toggle();
+    $(this).next().children('.gift-cards').toggle();
+    $(this).nextAll('.btn-recharge').toggleClass('ui-mt24');
+  })
+//弹出层
+$("#btn_recharge").on("click",function(){
+    layer.open({
+      type:2,
+      title:false,
+      shadeClose:true,
+      area: ['500px','384px'],
+      content:['layer-recharge.htm','no']
+    })
+});
+// 信投宝弹出层
+$('.btn-xtb-invest').on('click', function() {
+  layer.open({
+      type:2,
+      title:false,
+      shadeClose:true,
+      area: ['500px','580px;'],
+      content:['layer-buy-xtb.htm','no']
+    })
+});
+// 债券转让弹出层
+$('.btn-bond-invest').on('click', function() {
+  layer.open({
+      type:2,
+      title:false,
+      shadeClose:true,
+      area: ['500px','580px;'],
+      content:['layer-buy-bond.htm','no']
+    })
+});
 });
