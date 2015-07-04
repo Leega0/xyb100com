@@ -8,6 +8,8 @@
 	<title>信用宝-信投宝详情页</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/invest.css">
+	<!--[if lte IE 8]>
+<script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
 </head>
 <body>
 <!-- 顶部start -->
@@ -419,10 +421,9 @@
     <script type="text/javascript" src="js/plugins/layer.js"></script>
     <script type="text/javascript" src="js/radarscore.js"></script>
 	<script type="text/javascript" src="js/radarchart.js"></script>
-	<!--[if lte IE 8]><script type="text/javascript" src="js/lib/excanvas.min.js"></script><![endif]-->
 	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript">
-		window.onload = radarScore;
-	</script>
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="js/lib/excanvas.min.js"></script>
+	<![endif]-->
 </body>
 </html>
