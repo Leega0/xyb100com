@@ -688,6 +688,9 @@ h6 {
 .ui-pb30 {
   padding-bottom: 30px !important;
 }
+.ui-pb60 {
+  padding-bottom: 60px !important;
+}
 .ui-pl5 {
   padding-left: 5px !important;
 }
@@ -745,9 +748,47 @@ h6 {
     background-color: #3177a7;
   }
 }
+.ui-btn-empty {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0 5px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-image: none;
+  border-radius: 4px;
+  background-color:#fff;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  outline: none;
+}
+.ui-btn-blue {
+  background-color: #2c97f4;
+  &:hover{
+    background-color: #62b7e7;
+  }
+  &:active{
+    background-color: #3177a7;
+  }
+}
 .ui-btn-gray{
   background-color: #d1d1d1;
 }
+.ui-btn-empty-blue {
+  color: #2c97f4;
+  border: 1px solid #2c97f4;
+  &:hover{
+    color: #62b7e7;
+    border-color: #62b7e7;
+  }
+  &:active{
+    color: #3177a7;
+    border-color: #3177a7;
+  }
+}
+
 // 表单input
 /*通用表单*/
 .ui-form-item {
@@ -1005,6 +1046,10 @@ h6 {
 }
 .icon-label-xin{
   background-color: #74ca98;
+}
+.icon-label-hot{
+  background-color: #ff4d7b;
+  margin-left: 5px;
 }
 // 头部
 #top{

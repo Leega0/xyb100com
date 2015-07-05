@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .invest-table td {
   border-top: 1px solid #f6f6f6;
   padding: 23px 0;
@@ -294,6 +295,11 @@
   background-color: #fff;
   color: #399df5;
   border-top: 2px solid #3498db;
+}
+
+.content .detail-list {
+  border: 1px solid #eee;
+  border-top: 0;
 }
 
 .ask-item {
@@ -894,5 +900,129 @@
   border-left: 1px solid #dadada;
   text-align: center;
 }
+
+.invest-mkap-btn .ui-btn {
+  width: 120px;
+  box-sizing: border-box;
+  padding: 0 !important;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.invest-fixed-sum ul {
+  overflow: hidden;
+  padding: 58px 0;
+}
+
+.invest-fixed-sum li {
+  float: left;
+  width: 33.33%;
+}
+
+.invest-fixed-sum li .icon-bg {
+  float: left;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  margin-left: 46px;
+  background-color: #def0ff;
+  text-align: center;
+}
+
+.invest-fixed-sum li .invest-icon {
+  display: inline-block;
+  margin-top: 15px;
+  background: url(../images/sprites/invest-icon.png) no-repeat;
+}
+
+.invest-fixed-sum li.sum-money .invest-icon {
+  width: 41px;
+  height: 36px;
+  background-position: -98px 0;
+  margin-top: 25px;
+}
+
+.invest-fixed-sum li.sum-makemoney .invest-icon {
+  width: 40px;
+  height: 50px;
+  background-position: 0 0;
+}
+
+.invest-fixed-sum li.sum-users .invest-icon {
+  width: 54px;
+  height: 43px;
+  background-position: -42px 0;
+}
+
+.invest-fixed-sum li span {
+  display: block;
+  padding-top: 20px;
+  padding-left: 24px;
+}
+
+.invest-fixed-sum li span i {
+  display: block;
+  padding-top: 5px;
+}
+
+.process-map {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*map 地图样式*/
+.map-point {
+  margin: 0 auto;
+  width: 469px;
+  height: 388px;
+  overflow: hidden;
+  position: relative;
+  background: url(../images/mapbg.png) no-repeat 0 0;
+}
+
+.map-point a {
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 22px;
+  text-indent: -9999em;
+  overflow: hidden;
+  background: url(../images/map_point.png) no-repeat;
+}
+
+.mapStateTip {
+  position: absolute;
+  padding: 5px 8px;
+  background: #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+}
+
+[class^="arrows-"], [class*=" arrows-"] {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent;
+  overflow: hidden;
+  content: "";
+}
+
+.mapStateTip .arrows-down {
+  border-top-color: #3498db;
+  border-width: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: -11px;
+  margin-left: -6px;
+}
+
+/*地图样式结束*/
 
 /*# sourceMappingURL=invest.css.map */

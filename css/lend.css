@@ -4,6 +4,11 @@ h5 {
   font-weight: normal;
 }
 
+.contain_wrapa {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .contain_wrap {
   overflow: hidden;
 }
