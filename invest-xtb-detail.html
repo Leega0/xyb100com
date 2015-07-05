@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/invest.css">
 	<!--[if lte IE 8]>
-<script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+		<script src="js/lib/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
 <!-- 顶部start -->
@@ -228,7 +229,7 @@
         			</div>
         		</div>
         		<div class="loaner-score fr" data-page="radar">
-        			<h5 class="align-left">信用宝风险评估</h5>
+        			<h5 class="align-left">信用宝信用评分系统</h5>
         			<div class="fico-canvas">
         				<!-- canvas -->
         				<canvas id="radarChart" width="165" height="165"></canvas>
@@ -247,6 +248,7 @@
         							<div class="ui-progress-content fico-blue" style="width: 82%;"></div>
         							<span class="ui-progress-value" id="pers_score">0.7</span>
         						</div>
+        						<span class="get-score">73<em class="ui-font-gray">/78</em></span>
         					</div>
         				</li>
         				<li>
@@ -257,6 +259,7 @@
         							<div class="ui-progress-content fico-green" style="width: 82%;"></div>
         							<span class="ui-progress-value" id="enss_score">0.9</span>
         						</div>
+        						<span class="get-score">68<em class="ui-font-gray">/86</em></span>
         					</div>
         				</li>
         				<li>
@@ -267,6 +270,7 @@
         							<div class="ui-progress-content fico-yellow" style="width: 82%;"></div>
         							<span class="ui-progress-value " id="cred_score">1</span>
         						</div>
+        						<span class="get-score">83<em class="ui-font-gray">/86</em></span>
         					</div>
         				</li>
         				<li>
@@ -277,6 +281,7 @@
         							<div class="ui-progress-content fico-red" style="width: 82%;"></div>
         							<span class="ui-progress-value" id="vouch_score">0.75</span>
         						</div>
+        						<span class="get-score">83<em class="ui-font-gray">/50</em></span>
         					</div>
         				</li>
 
@@ -291,6 +296,86 @@
         			</div>
         		</div>
         	</div>
+        	<!-- 评分模块end -->
+        	<!-- 个人资产start -->
+        	<div class="all-info-tables">
+        	<h6>个人资产及征信信息</h6>
+        	<div class="xtb-info-table">
+        		<table>
+        			<tbody><tr>
+        				<th width="16%">月收入水平</th>
+        				<th>房产</th>
+        				<th>车产</th>
+        				<th>其他信用贷款</th>
+        				<th>未销户信用卡</th>
+        				<th>信用卡额度使用</th>
+        			</tr>
+        			<tr>
+        				<td>12000元-18000元</td>
+        				<td>有</td>
+        				<td>有</td>
+        				<td>无</td>
+        				<td>有</td>
+        				<td>-</td>
+        			</tr>
+        			</tbody>
+        		</table>
+        	</div>
+        	<!-- 企业信息 start-->
+        	<h6>企业信息</h6>
+        	<div class="xtb-info-table">
+        		<table>
+        			<tbody><tr>
+        				<th width="20%">企业所在地</th>
+        				<th>企业经营年限</th>
+        				<th>企业行业</th>
+        				<th>经营场所类型</th>
+        				<th>月均销售收入</th>
+        			</tr>
+        			<tr>
+        				<td>福建省 厦门市</td>
+        				<td>10年</td>
+        				<td>其他</td>
+        				<td>其他</td>
+        				<td>10-20万</td>
+        			</tr>
+        		</tbody>
+        		</table>
+        	</div>
+        	<!--  信用宝借款记录 -->
+        	<h6>信用宝借款记录</h6>
+        	<div class="xtb-info-table">
+        		<table>
+        			<tbody>
+        				<tr>
+        					<th>发布借款笔数</th>
+        					<th>成功借款笔数</th>
+        					<th>还清笔数</th>
+        					<th>逾期次数</th>
+        					<th>共计借入</th>
+        					<th>待还金额</th>
+        					<th>逾期金额</th>
+        					<th>严重逾期</th>
+        				</tr>
+        				<tr>
+        					<td>1笔</td>
+        					<td>1笔</td>
+        					<td>1笔</td>
+        					<td>0次</td>
+        					<td>￥0.00</td>
+        					<td>￥0.00</td>
+        					<td>￥0.00</td>
+        					<td>0次</td>
+        				</tr>
+        			</tbody>
+        		</table>
+        	</div>
+	        	<!-- 提示信息 -->
+	        	<p class="fico-noticy">*信用宝将以客观、公正的原则，最大程度地核实借入者信息的真实性，但不保证审核信息100%真实。如果借入者长期逾期，其提供的信息将被公布。</p>
+	        	<!-- 查看报告 -->
+	        	<a href="" class="ui-btn ui-btn-blue fico-view-report">查看用户纸质评估报告</a>
+        	</div>
+        	<!-- 个人资产end -->
         </div>
         <!-- 借款详情end -->
         <div class="detail-list">

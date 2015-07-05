@@ -607,6 +607,7 @@
 }
 .loaner-info{
 	width:760px;
+	margin-left: 10px;
 	.loan-reason{
 		font-size: 14px;
 		color: #b9b9b9;
@@ -663,7 +664,6 @@
     border-radius: 6px;
     position: relative;
     overflow: hidden;
-    width: 276px;
     padding: 20px 0 20px 20px;
     text-align: center;
     width: 330px;
@@ -676,6 +676,7 @@
     width: 208px;
     height: 208px;
     position: relative;
+    margin-left: 35px;;
     margin-top: 25px;
     	canvas{
     		margin-top: 21px;
@@ -712,15 +713,16 @@
 		right: 0;
 		width: 80px;
 		height: 84px;
-		background-color: #f0f5f6;
+		background-color: #73cb99;
 		text-align: center;
 		b{
 			font-weight: normal;
 			padding-top: 10px;
 			display: block;
+			color: #fff;
 		}
 		strong{
-			color: #87b91d;
+			color: #fff;
 			font-size: 42px;
 			display: block;
 			position: absolute;
@@ -735,11 +737,73 @@
 			bottom: -20px;
 			width: 100%;
 			em{
-				color: #87b91d;
+				color: #2c97f4;
 				font-weight: bold;
 				padding: 0 3px;
 				font-family: Tahoma, Geneva, sans-serif;
 			}
 		}
 	}
+	.fico-get-score{
+    	padding: 10px 0;
+    	margin-left: 15px;
+    	.detail-percent-wrap{
+			width: 266px;
+    		margin: 15px 0;
+    		overflow: hidden;
+    	}
+    	.progress-txt{
+    		font-size: 12px;
+		    color: #3e3e3e;
+		    padding: 0 10px;
+		    float: left;
+    	}
+    	.fico-ui-progress{
+    		width: 120px;
+    		height: 12px;
+		    border-radius: 6px;
+		    top: 2px;
+		    float: left;
+    	}
+    	.ui-progress-content{
+    		height: 12px;
+    		border-radius: 6px;
+    	}
+	}
+}
+// 借款人信息table
+.all-info-tables{
+	padding:0 30px 30px 40px;
+	margin-top: -30px;
+	.fico-noticy {
+    		color: #b9b9b9;
+    		padding: 18px 10px;
+    	}
+    .fico-view-report{
+    	padding:12px 0;
+	    margin: 30px auto;
+	    display: block;
+	    width: 290px;
+	    }
+}
+.xtb-info-table{
+	table{
+		width: 100%;
+    	border: 1px solid #dadada;
+    	th{
+    		height: 43px;
+    		font-weight: normal;
+    		background-color: #f3f3f3;
+    		border-left: 1px solid #dadada;
+    		border-bottom: 1px solid #dadada;
+    	}
+    	td{
+    		padding: 12px 20px;
+		    vertical-align: text-top;
+		    border-bottom: 1px solid #dadada;
+		    line-height: 1.8;
+		    border-left: 1px solid #dadada;
+		    text-align: center;
+    	}
+    }
 }
