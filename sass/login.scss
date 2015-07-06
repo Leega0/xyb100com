@@ -212,14 +212,21 @@
 .w98{
 	width:98% !important;
 }
+.ui-form-hidden{
+	display:none;
+}
 .recommend-code{
 	text-align:left;
 	padding:10px 0;
 	font-size: 14px;
-	.icon-tj-minmus{
-		background-position:-143px 0;
+	cursor: pointer;
+	.icon-tj-plus{
+		background-position:-169px 0;
 		position: relative;
 		top:-10px;
+	}
+	.icon-tj-minmus{
+		background-position:-143px 0;
 	}
 }
 // 发送验证码

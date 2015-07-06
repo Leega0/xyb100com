@@ -47,8 +47,8 @@
 						</p>
 				</div>
 				<!-- 推荐人 -->
-				<p class="recommend-code ui-font-gray"><i class="ui-label-icon icon-tj-minmus"></i>推荐人(选填)</p>
-				<div class="ui-form-item">
+				<p class="recommend-code ui-font-gray"><i class="ui-label-icon icon-tj-plus"></i>推荐人(选填)</p>
+				<div class="ui-form-item ui-form-hidden">
 						<p class="ui-input-body">
 							<input type="text" placeholder="推荐码/手机号/邮箱/ID号" class="w98">
 						</p>
@@ -75,6 +75,14 @@
 	</div>
 <!-- 底部结束 -->
 <script type="text/javascript" src="js/lib/jquery.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	// 推荐号填写
+	$(function(){
+		$('.recommend-code').bind('click',function(){
+			$(this).find(".icon-tj-plus").toggleClass('icon-tj-minmus');
+			$(this).next().toggle();
+		})
+	})
+</script>
 </body>
 </html>
