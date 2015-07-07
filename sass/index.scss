@@ -453,3 +453,88 @@
 		padding:20px 0;
 	}
 }
+// 新手专区
+.new-user-banner{
+	overflow: visible;
+	.arrow_blue{
+		width: 36px;
+		height: 23px;
+		position: absolute;
+		left: 50%;
+		margin-left: -18px;
+		bottom:-23px;
+		background:url(../images/sprites/arrow_blue.png) no-repeat;
+	}
+}
+.nw-title{
+	h3{
+		font-weight: normal;
+		text-align: center;
+		margin: 0;
+		padding-bottom: 40px;
+		padding-top: 80px;
+	}
+}
+.nw-invest-dqbox{
+	.dq_plan{
+		.rate-title{
+			padding-top: 14px !important;
+		}
+		.title{
+			padding-bottom: 20px !important;
+		}
+	}
+}
+.nw-tag{
+	span{
+		margin-right: 0 !important;
+		padding:1px 5px !important;
+	}
+}
+.nw-invest-xtb{
+	.invest-rate{
+		.green-bbox{
+		font-size: 12px;
+		padding: 1px 5px;
+		position: relative;
+		top: -4px;
+		margin-left: 5px;
+		}
+	}
+}
+// 如何投资
+.bg-how-invest{
+	position: relative;
+	.arrow_gray{
+		width: 36px;
+		height: 23px;
+		position: absolute;
+		left: 50%;
+		margin-left: -18px;
+		top:0;
+		background:url(../images/sprites/arrow_gray.png) no-repeat;
+	}
+}
+// 新手引导-立即注册
+.nw-regist-now{
+	position: relative;
+	.regist-now{
+		overflow: visible;
+	}
+	.arrow_white{
+		width: 36px;
+		height: 23px;
+		position: absolute;
+		left: 50%;
+		margin-left: -18px;
+		top:0;
+		background:url(../images/sprites/arrow_white.png) no-repeat;
+	}
+
+}
+.h200{
+	overflow: hidden;
+	height: 200px;
+	background-color: #fff;
+	clear:both;
+}
