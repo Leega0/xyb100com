@@ -1,0 +1,145 @@
+.help-center{
+	padding-bottom:70px;
+}
+.help-center-box{
+	background:#fff;
+	padding:30px 30px 50px 30px;
+	margin-top:24px;
+	border:1px solid #eee;
+	border-radius:3px;
+	h2{
+		position:relative;
+		color:#474747;
+		font-size:18px;
+		padding: 0 0 30px 12px;
+		border-bottom:1px solid #eee;
+		margin:0;
+		i{
+			position:absolute;
+			top: 0;
+			left: 0;
+			width: 4px;
+			height: 16px;
+			background:#399df5;
+		}
+	}
+	dl{
+		margin:30px 0 0 0;
+	}
+	dd{
+		float:left;
+		width: 379px;
+	}
+	.help-center-ul{
+		position:relative;
+		li{
+			position:relative;
+			padding-left:20px;
+			margin-top:16px;
+		}
+		i{
+			position:absolute;
+			top: 5px;
+			left:0;
+			display:block;
+			width: 6px;
+			height: 6px;
+			background:url("../images/icon-list-style.png") no-repeat;
+		}
+	}
+	a{
+		color: #474747;
+		font-size:14px;
+		&:hover{
+			color: #2c97f4;
+		}
+		&:active{
+			color: #474747;
+		}
+	}
+}
+.help-center-box-1{
+	ul{
+		padding-left:100px;
+	}
+	a{
+		color: #b9b9b9;
+		font-size:14px;
+		&:active{
+			color: #b9b9b9;
+		}
+	}
+	div{
+		position:absolute;
+		top: 0;
+		left:10px;
+		color:#474747;
+		font-size:14px;
+		text-align:center;
+		span{
+			display:block;
+			width: 60px;
+			height: 60px;
+			margin-bottom:10px;
+			background:url("../images/sprites/icon-help-center.png") no-repeat;
+		}
+	}
+	.icon-help-center-2{
+		background-position:-70px 0;
+	}
+	.icon-help-center-3{
+		background-position:-140px 0;
+	}
+	.icon-help-center-4{
+		background-position:-210px 0;
+	}
+	.icon-help-center-5{
+		background-position:-280px 0;
+	}
+	.icon-help-center-6{
+		background-position:-350px 0;
+	}
+}
+.help-center-box-2{
+	ul{
+		margin-top: 66px;
+	}
+	li{
+		position:relative;
+		float:left;
+		margin-left:120px;
+		margin-right:31px;
+		&:first-child{
+			margin-left:31px;
+		}
+	}
+	a{
+		display:block;
+		text-align: center;
+		height: 70px;
+		width: 94px;
+		color: #474747;
+		font-size:14px;
+		background:#f6f6f6;
+		border-radius:50%;
+		line-height: 24px;
+		padding-top:24px;
+		&:hover{
+			color: #3f9ef5;
+			background:#def0ff;
+		}
+		&:active{
+			color: #474747;
+			background:#f6f6f6;
+		}
+	}
+	i{
+		position:absolute;
+		top: 39px;
+		left: -84px;
+		display:block;
+		width: 18px;
+		height: 15px;
+		background:url("../images/sprites/icon-double-next.png") no-repeat;
+	}
+}
